@@ -20,6 +20,8 @@ export default Guestbook;
 const GuestBookWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   gap: 8px;
   margin-bottom: 50px;
+  width: 90%;
 `;

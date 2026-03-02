@@ -50,7 +50,7 @@ const FormWrapper = styled.form`
   flex-direction: column;
   gap: 2px;
   overflow: visible;
-  align-items: center;
+  width: 100%;
 `;
 
 const NameInput = styled.input`
