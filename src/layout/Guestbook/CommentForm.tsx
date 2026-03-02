@@ -21,7 +21,7 @@ const CommentForm = () => {
         date: new Date().toLocaleString(),
       };
       void push(guestbookRef, guestbookMessage);
-      alert('메시지를 보냈습니다. 💌');
+      alert('메시지를 저장했습니다. 💌');
       setName('');
       setMessage('');
     }
