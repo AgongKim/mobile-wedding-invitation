@@ -1,62 +1,62 @@
 {
   "greeting": {
-    "title": "장세모 \uD83D\uDC8D 황네모\n결혼합니다!",
-    "message": "저희 결혼합니다.\n\n서로에게 알맞은 온도로 따뜻하던 우리.\n부부로서 첫걸음을 내딛는 그 설렘의 순간에\n소중한 분들을 초대합니다.",
+    "title": "김태현 \uD83D\uDC8D 남도연\n결혼합니다!",
+    "message": "각자의 길을 걷던 두 사람이\n같은 길에서 만났습니다.\n이제는 나란히\n한 방향으로 걸어가려 합니다.\n\n저희의 새로운 출발을 함께해 주세요.",
     "host": {
       "groom": {
-        "name": "세모",
-        "relation": "아들",
+        "name": "김태현",
+        "relation": "장남",
         "parents": [
           {
             "relation": "아버지",
-            "name": "장아빠"
+            "name": "김진영"
           },
           {
             "relation": "어머니",
-            "name": "이엄마"
+            "name": "엄승옥"
           }
         ]
       },
       "bride": {
-        "name": "네모",
-        "relation": "딸",
+        "name": "남도연",
+        "relation": "삼녀",
         "parents": [
           {
             "relation": "아버지",
-            "name": "황아빠"
+            "name": "장인식"
           },
           {
             "relation": "어머니",
-            "name": "이엄마"
+            "name": "김황진"
           }
         ]
       }
     },
-    "eventDetail": "2024년 2월 17일 (토) 14:00\n아펠가모 공덕 라로브홀"
+    "eventDetail": "2026년 9월 19일 (토) 11:00\n더시그너스 웨딩 수원 컨벤션홀"
   },
   "hostInfo": [
     {
       "host": "신랑측",
       "accountInfo": [
         {
-          "name": "장세모",
+          "name": "김태현",
           "relation": "신랑",
-          "bank": "카카오뱅크",
-          "account": "1234-56-789012",
+          "bank": "우리은행",
+          "account": "1002-3548-91303",
           "kakaopayAccount": "",
           "tossAccount": ""
         },
         {
-          "name": "장아빠",
+          "name": "김진영",
           "relation": "아버지",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "우리은행",
+          "account": "1002-3548-91303"
         },
         {
-          "name": "이엄마",
+          "name": "엄승옥",
           "relation": "어머니",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "우리은행",
+          "account": "1002-3548-91303"
         }
       ]
     },
@@ -64,44 +64,44 @@
       "host": "신부측",
       "accountInfo": [
         {
-          "name": "황네모",
+          "name": "남도연",
           "relation": "신부",
-          "bank": "토스뱅크",
-          "account": "1234-5678-9012",
+          "bank": "카카오뱅크",
+          "account": "3333-11-5577521",
           "kakaopayAccount": "",
           "tossAccount": ""
         },
         {
-          "name": "황아빠",
+          "name": "장인식",
           "relation": "아버지",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "카카오뱅크",
+          "account": "3333-11-5577521"
         },
         {
-          "name": "이엄마",
+          "name": "김황진",
           "relation": "어머니",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "카카오뱅크",
+          "account": "3333-11-5577521"
         }
       ]
     }
   ],
   "mapInfo": {
-    "address1": "아펠가모 공덕 라로브홀",
-    "address2": "서울 마포구 마포대로 92\n효성해링턴스퀘어 B동 7층\n02-2197-0230",
-    "naverMap": "https://naver.me/IM4RDses",
-    "kakaoMap": "https://kko.kakao.com/otznTfkVWV",
-    "lat": 37.54222,
-    "lon": 126.952708
+    "address1": "더시그너스웨딩 수원 컨벤션홀",
+    "address2": "경기도 수원시 팔달구 권광로 178, 한국교직원공제회 경기회관 2층\n031-224-2030",
+    "naverMap": "https://naver.me/5R4fASYs",
+    "kakaoMap": "https://place.map.kakao.com/181071736",
+    "lat": 37.263529,
+    "lon": 126.033239
   },
   "locationInfo": [
     {
       "title": "\uD83D\uDCCD 지하철",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 5·6호선 공덕역 7번 출구 (도보 2분)\n\uD83D\uDC49\uD83C\uDFFB 경의·중앙선, 공항철도 공덕역 10번 출구 (도보 30초)"
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 분당선 수원시청역 9번 출구 (도보 30초)"
     },
     {
       "title": "\uD83D\uDCCD 주차안내",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 건물 내 3-5층 2시간 무료주차\n(안내데스크에서 주차권 수령)"
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 건물 내 2시간 무료주차\n만차 시 제휴 주차장 안내 예정"
     }
   ],
   "emojis": [
