@@ -1,11 +1,13 @@
 import styled from '@emotion/styled';
 
 export const Heading1 = styled.p`
-  font-family: HSSanTokki20-Regular, serif;
-  font-size: 1.5rem;
+  font-family: 'NanumSeAh', serif;
+  font-size: 2.3rem;
   margin: 10px;
   color: #e88ca6;
   white-space: pre-line;
+  /* 단일 굵기 손글씨체라 획을 두껍게 해 무게감을 줌 */
+  -webkit-text-stroke: 0.8px currentColor;
 `;
 
 export const Heading2 = styled.p`
@@ -15,11 +17,14 @@ export const Heading2 = styled.p`
 `;
 
 export const PointTitle = styled.p`
-  font-family: HSSanTokki20-Regular, serif;
+  font-family: 'NanumSeAh', serif;
+  font-size: 1.4rem;
   line-height: 1;
   margin: 0;
   color: #e88ca6;
   white-space: pre-line;
+  /* 단일 굵기 손글씨체라 획을 두껍게 해 무게감을 줌 */
+  -webkit-text-stroke: 0.8px currentColor;
 `;
 
 export const Paragraph = styled.p`

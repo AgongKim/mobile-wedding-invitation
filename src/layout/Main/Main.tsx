@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import mainImg from '@/assets/images/00129.jpg';
+import mainImg from '@/assets/images/main.jpeg';
 
 const Main = () => {
   return (
