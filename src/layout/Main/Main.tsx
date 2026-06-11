@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
-import mainImg from '@/assets/images/13.jpeg'
+import mainImg from '@/assets/images/00129.jpg'
 
 const Main = () => {
   const { greeting } = data;
