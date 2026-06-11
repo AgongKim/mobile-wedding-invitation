@@ -66,22 +66,16 @@
         {
           "name": "남도연",
           "relation": "신부",
-          "bank": "카카오뱅크",
-          "account": "3333-11-5577521",
+          "bank": "국민은행",
+          "account": "789401-01-556468",
           "kakaopayAccount": "",
           "tossAccount": ""
         },
         {
-          "name": "장인식",
-          "relation": "아버지",
-          "bank": "카카오뱅크",
-          "account": "3333-11-5577521"
-        },
-        {
           "name": "김황진",
           "relation": "어머니",
-          "bank": "카카오뱅크",
-          "account": "3333-11-5577521"
+          "bank": "농협은행",
+          "account": "637-12-231324"
         }
       ]
     }
