@@ -13,11 +13,18 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const { emojis } = data;
 
   const [count, setCount] = useState(0);
+  const [name, setName] = useState(
+    () => `익명${Math.floor(Math.random() * 1000)
+      .toString()
+      .padStart(3, '0')}`,
+  );
 
   useEffect(() => {
-    const dbRef = ref(realtimeDb, 'likes');
+    const dbRef = ref(realtimeDb, 'likeCounts');
     onValue(dbRef, (snapshot) => {
-      setCount(Number(snapshot.val()));
+      const counts = (snapshot.val() ?? {}) as Record<string, number>;
+      const total = Object.values(counts).reduce((sum, n) => sum + Number(n), 0);
+      setCount(total);
     });
   }, []);
 
@@ -35,9 +42,12 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const handleCount = () => {
     void jsConfetti.addConfetti({ emojis });
 
-    const dbRef = ref(realtimeDb);
-    void update(dbRef, {
-      likes: increment(1),
+    const trimmedName = name.trim() || '익명';
+    // Firebase 키에 사용할 수 없는 문자(. # $ [ ] /)를 치환
+    const safeName = trimmedName.replace(/[.#$[\]/]/g, '_');
+
+    void update(ref(realtimeDb), {
+      [`likeCounts/${safeName}`]: increment(1),
     });
   };
 
@@ -48,6 +58,12 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
 
   return (
     <Nav isVisible={isVisible}>
+      <NameInput
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        placeholder="이름을 입력해주세요"
+        maxLength={20}
+      />
       <Button onClick={handleCount}>
         <Heart fill="#e88ca6" />
         {count || ''}
@@ -76,4 +92,25 @@ const Nav = styled.nav<{ isVisible: boolean }>`
   justify-content: center;
   gap: 5px;
   display: ${(props) => (props.isVisible ? 'flex' : 'none')};
+`;
+
+const NameInput = styled.input`
+  width: 100px;
+  align-self: stretch;
+  box-sizing: border-box;
+  padding: 0.5em 0.8em;
+  border-radius: 8px;
+  border: 1px solid #dfdfdf;
+  outline: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: normal;
+  background: white;
+  color: #1a1a1a;
+  text-align: center;
+
+  &::placeholder {
+    color: #aaa;
+  }
 `;
